@@ -1,4 +1,4 @@
-# xpfest
+# The Experience Festival
   A website made for a project about a music festival in the metaverse.
 
 
