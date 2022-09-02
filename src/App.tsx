@@ -1,4 +1,4 @@
-import './App.css'
+
 import Masthead from './components/masthead'
 import Sponsors from './components/sponsors'
 

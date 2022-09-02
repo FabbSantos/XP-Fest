@@ -1,0 +1,45 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 10rem;
+    min-width: 50%;
+    padding: 0 40px 10rem 0;
+}
+
+.item img {
+    pointer-events: none;
+    min-height: 200px;
+}
+
+.item-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item-content span{
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #15bff3;
+}
+
+.inner-carousel{
+    max-width: 1300px;
+    display: flex;
+}
+
+.carousel { 
+    max-width: 1400px;
+    cursor: grab;
+    overflow-x: hidden;
+}
+
+@media (min-width: 1080px) {
+    .item-content{
+        flex-direction: row;
+    }
+}

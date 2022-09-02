@@ -5,8 +5,8 @@ function Masthead() {
     return (
         <>
             <div className="max-w-screen h-screen flex flex-col lg:flex-row relative items-center justify-center">
-                <img src="./src/assets/the_exp.png" alt="The Experience" className='max-h-[476px] lg:max-h-[500px] w-auto' />
-                <h1 className='invisible absolute'>The Experience Festival</h1>
+                <img src="./src/assets/the_exp.png" alt="The Experience Festival - Uma experiência metaverso" className='max-h-[476px] lg:max-h-[870px] w-auto' />
+                <h1 className='invisible absolute'>The Experience Festival - Uma experiência metaverso</h1>
 
 
                 <div className='icon-scroll'></div>
