@@ -43,7 +43,7 @@ function Timer() {
             <motion.div id="tempo"
             initial={{ opacity: 0, x:'-5rem' }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 4, duration: 1.5 }}
+            transition={{ delay: 2, duration: 1 }}
             >
 
                 <ul>
