@@ -93,8 +93,7 @@ li{
 }
 
 .ticket{
-  background: url('./src/assets/vr-b.jpg') -25rem bottom no-repeat;
-  /* , url('./src/assets/bg-vr.jpg') 45rem bottom no-repeat */
+  background: url('vr-b.jpg') -25rem bottom no-repeat;  
   background-position-x: -20rem;
   background-position-y: bottom;
   background-size: 90% 90%, auto;
