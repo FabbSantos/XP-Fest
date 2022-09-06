@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-ticket': "url('./src/assets/woman.jpg')",
       }
     },
   },

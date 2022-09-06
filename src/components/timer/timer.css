@@ -1,0 +1,53 @@
+
+
+/* desktop */
+/* body{
+	width: 100%; 
+	height: 100%; 
+	margin: 0; 
+	background: #94DAF0;
+	font-family: 'Passion One', cursive;
+} */
+
+
+#tempo li{
+	display: inline-block;
+	font-size: 1.3rem; 
+    text-align: center;
+	/* letter-spacing: 5px;  */
+	text-transform: uppercase;
+	padding: 10px 20px;   
+}
+li p {
+    padding-top: 10px;
+}
+
+#tempo{	
+	text-align: center;	
+	color: #F8F8FF;
+	padding-top: 50px; 
+	/* width: 95%;  */
+}
+
+
+#dias, #horas, #minutos, #segundos{
+	font-size: 3rem;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 800px){
+	li{font-size: 1rem; display: block;}	
+	#dias, #horas, #minutos, #segundos{font-size: 2rem;}	
+		#tempo{padding-top: 30px;}
+}
+
+
+@media screen and (max-width: 500px){
+	li{font-size: 18p1remx; display: block;}
+	#dias, #horas, #minutos, #segundos{font-size: 2rem;}
+}
+
+
+ /* created by magda pimentel, august 2017 - 31 Dias de Código */

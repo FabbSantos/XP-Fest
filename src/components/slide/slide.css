@@ -5,8 +5,9 @@
     align-items: center;
 
     min-height: 10rem;
-    min-width: 50%;
-    padding: 0 40px 10rem 0;
+    min-width: 100%;
+    padding: 0;
+    /* overflow: hidden; */
 }
 
 .item img {
@@ -16,7 +17,7 @@
 
 .item-content{
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -24,16 +25,18 @@
 .item-content span{
     font-weight: bold;
     font-family: "Roboto";
-    color: #15bff3;
+    color: #23a9e8;
 }
 
 .inner-carousel{
-    max-width: 1300px;
+    /* overflow-y: hidden; */
+    padding: 0 20px;
+    max-width: 100vw;
     display: flex;
 }
 
 .carousel { 
-    max-width: 1400px;
+    /* max-width: 1400px; */
     cursor: grab;
     overflow-x: hidden;
 }
@@ -41,5 +44,12 @@
 @media (min-width: 1080px) {
     .item-content{
         flex-direction: row;
+    }
+    .item{
+        min-width: 50%;
+        padding: 0 40px 10rem 0;
+    }
+    .inner-carousel{
+        max-width: 1400px;
     }
 }

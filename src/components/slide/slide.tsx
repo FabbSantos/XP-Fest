@@ -1,36 +1,37 @@
 import { motion } from 'framer-motion'
 import './slide.css'
-import { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState, Ref } from 'react'
 
 function Slide() {
 
     const [width, setWidth] = useState(0)
-    const carousel = useRef<Object>() ?? {}
-    console.log(carousel)
+    const carousel = useRef<HTMLDivElement>() ?? {}
+    const r = carousel as Ref<HTMLDivElement>
 
     useEffect(() => {
-        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+        const scrollWidth = carousel?.current?.scrollWidth ?? 0
+        const offsetWidth = carousel?.current?.offsetWidth ?? 0
+        setWidth(scrollWidth - offsetWidth)
     }, []);
 
     return (
         <>
-            <motion.div ref={carousel} className='carousel  -mt-32'
+            <motion.div ref={r} className='carousel pb-20 lg:pb-0 max-w-screen lg:max-w-[1400px]'
                 whileTap={{ cursor: "grabbing" }}
             >
-                <img src="./src/assets/arrow_left.png" alt="" className=' w-[300px] absolute bottom-0 left-0' />
-                <img src="./src/assets/arrow_right.png" alt="" className=' w-[300px] absolute bottom-0 right-0' />
+                <img src="./src/assets/arrow_left.png" alt="" className=' pointer-events-none w-[300px] absolute hidden lg:block bottom-0 left-0' />
+                <img src="./src/assets/arrow_right.png" alt="" className=' pointer-events-none w-[300px] absolute hidden lg:block bottom-0 right-0' />
 
 
                 <motion.div
                     drag="x"
                     dragConstraints={{ right: 0, left: -width }}
-                    className='inner-carousel'
-                >
+                    className='inner-carousel'>
 
                     <motion.div className='item'>
                         <img src="./src/assets/samsung-logo.svg" width="200px"></img>
                         <motion.div className='item-content relative'>
-                            <h3 className='py-10 text-center robot'>Junte-se a nós no nosso minigame de <span>tiro ao alvo</span>! Acerte os produtos que aparecem na tela e ganhe um cupom de desconto exclusivo nas lojas Samsung! </h3>
+                            <h3 className='py-10 text-center robot'>No stand da <span>Samsung</span>, você vai jogar um tiro ao alvo personalizado. O game consiste em acertar os produtos que aparecerão na sua tela, o mais rápido possível antes que sumam. Você terá 3 minutos, e quanto mais produtos acertar, maior será o seu <span>cupom de desconto</span>. Contaremos com 3 cupons exclusivos: 15%, 20% e 25% em compras acima de 350 R$ no site da Samsung.    </h3>
                         </motion.div>
 
                     </motion.div>
@@ -38,21 +39,21 @@ function Slide() {
                     <motion.div className='item'>
                         <img src="./src/assets/riot.svg" width="200px"></img>
                         <motion.div className='item-content'>
-                            <h3 className='py-10 text-center robot'>Encontre-nos no metaverso, jogue com seus amigos um jogo da memória com temática de <span>LoR</span> e ganhe uma skin exclusiva! </h3>
+                            <h3 className='py-10 text-center robot'>Aqui no stand da <span>Riot Games</span> você encontra o Lembranças de Runeterra, que é um jogo da memória baseado no jogo de cartas da Riot Games, o Legends of Runeterra. Você vai achar um tabuleiro com 10 cartas, e deverá encontrar todos os 5 pares em um limite de tempo de 3 minutos. Ao completar o jogo, você ganha um pacote de espólios exclusivo do <span>THE XXP</span>. Para resgata-lo é só logar na nossa plataforma com sua conta Riot e digitar o código que estará disponível na tela ao final do jogo. </h3>
                         </motion.div>
                     </motion.div>
 
                     <motion.div className='item'>
                         <img src="./src/assets/burger-king.svg" width="160px"></img>
                         <motion.div className='item-content'>
-                            <h3 className='py-10 text-center robot'>Monte um <span>Whoper</span> corretamente e ganhe um cupom para trocar em um milkshake na compra de um combo Whopper! </h3>
+                            <h3 className='py-10 text-center robot'>No <span>BK</span> você vai aprender a fazer o sanduíche mais gostoso do mundo! A receita do Whopper aparecerá para você durante 5 segundos, e em seguida você deverá replica-la corretamente, seu tempo será de 3 minutos. Ao vencer esse desafio você ganhará um cupom que vai te dar o direito de duplicar seu combo Whopper e ainda te da direito a duas casquinhas.  </h3>
                         </motion.div>
                     </motion.div>
 
                     <motion.div className='item'>
                         <img src="./src/assets/Louis.svg" width="200px"></img>
                         <motion.div className='item-content'>
-                            <h3 className='py-10 text-center robot'>Junte 3 bolhas iguais, e ganhe uma <span>blusa exclusiva</span> para o seu avatar, e retire a mesma blusa em uma de <span>nossas lojas!</span> </h3>
+                            <h3 className='py-10 text-center robot'>No stand mais chique do festival, você encontrará um puzzle bubble, e terá 3 minutos para juntar 5 trios de logo que aparecerão dentro das bolhas. Ao completar a missão, você ganhará uma camiseta feita exclusivamente para o seu avatar dentro do <span>THE XXP</span>. E também ganha a camiseta em uma loja física da marca em compras acima de 500 R$.  </h3>
                         </motion.div>
                     </motion.div>
 
