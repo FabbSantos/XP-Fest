@@ -2,12 +2,12 @@ import { motion } from 'framer-motion'
 import './slide.css'
 import React, { useRef, useEffect, useState, Ref } from 'react'
 
-import arrow_left from '../assets/arrow_left.png'
-import arrow_right from '../assets/arrow_right.png'
-import samsung from '../assets/samsung-logo.svg'
-import bk from '../assets/burger-king.svg'
-import louis from '../assets/Louis.svg'
-import riot from '../assets/riot.svg'
+import arrow_left from '../../assets/arrow_left.png'
+import arrow_right from '../../assets/arrow_right.png'
+import samsung from '../../assets/samsung-logo.svg'
+import bk from '../../assets/burger-king.svg'
+import louis from '../../assets/Louis.svg'
+import riot from '../../assets/riot.svg'
 
 function Slide() {
 
