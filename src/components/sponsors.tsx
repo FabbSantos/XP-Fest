@@ -6,7 +6,7 @@ function Sponsors() {
     return (
         <>
             <div className="max-w-screen lg:min-h-screen py-20 lg:py-0 flex flex-col relative items-center  justify-center">
-                <motion.img src="./src/assets/patrocinadores.gif"
+                <motion.img src="./src/assets/patrocinadores.gif" alt='Conheça os patrocinadores'
                     initial={{ opacity: 0, x:'-5rem' }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 1.5 }} 

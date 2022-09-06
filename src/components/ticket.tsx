@@ -1,16 +1,10 @@
 import { motion } from 'framer-motion'
 import Timer from './timer/timer';
-import React, { useRef, useEffect, useState, Ref } from 'react'
 
-const isMobile =false
+
 
 function Ticket() {
-    // let  animation = {}
     const isMobile = window.innerWidth < 768
-
-
-    // initial: {{ opacity: !p, x: '17rem', y: '-20rem'}},
-    // whileInView :{{ opacity: 1, x: '17rem', y: '-5rem', textShadow: '0px 0px  4px, 0px 0px 12px' }}
 
     const animation = !isMobile ? {
         
