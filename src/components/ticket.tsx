@@ -36,11 +36,7 @@ function Ticket() {
             <div className="ticket w-screen px-10 lg:min-h-[100vh] flex flex-col  relative align-top lg:justify-center">
 
                  
-                <motion.h1  {...animation} className='intro pb-10 lg:pb-0 text-4xl lg:text-7xl text-white text-center uppercase'
-                    // initial = {{ opacity: 1, x: '17rem', y: '-20rem'}}
-                    // whileInView = {{ opacity: 1, x: '17rem', y: '-5rem', textShadow: '0px 0px  4px, 0px 0px 12px' }}
-                    // transition={{ delay: 0.2, duration: 1 }}
-                >
+                <motion.h1  {...animation} className='intro pb-10 lg:pb-0 text-4xl lg:text-7xl text-white text-center uppercase'>
                     <span className=''>sobre o </span> <br />ingresso
                 </motion.h1>
 
