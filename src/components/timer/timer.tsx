@@ -22,15 +22,15 @@ let contagemTempo = new Date('Sep 17, 2022 00:00:00').getTime(),
 
 
         // aparecer no ecrã a contagem em dias, horas, minutos e segundos e corresponder a mesma ao cálculo do tempo definido acima      
-        document.getElementById('dias').innerHTML = Math.floor(distancia / (day)),
-            document.getElementById('horas').innerHTML = Math.floor((distancia % (day)) / (hour)),
-            document.getElementById('minutos').innerHTML = Math.floor((distancia % (hour)) / (minute)),
-            document.getElementById('segundos').innerHTML = Math.floor((distancia % (minute)) / second);
+        document.getElementById('dias')!.innerHTML = String(Math.floor(distancia / (day))),
+        document.getElementById('horas')!.innerHTML = String(Math.floor((distancia % (day)) / (hour))),
+        document.getElementById('minutos')!.innerHTML = String(Math.floor((distancia % (hour)) / (minute))),
+        document.getElementById('segundos')!.innerHTML = String(Math.floor((distancia % (minute)) / second));
 
         // quando a contagem terminar, desaparecer a data e aparecer uma mensagem 
         if (distancia < 0) {
             clearInterval(x);
-            document.getElementById("tempo").innerHTML = "FIM";
+            document.getElementById("tempo")!.innerHTML = "FIM";
         }
 
     }, second);
