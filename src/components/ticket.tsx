@@ -36,7 +36,7 @@ function Ticket() {
 
                 <div className="flex flex-col justify-center items-center lg:max-w-[1050px] lg:pr-[10rem] self-end lg:pb-40">
 
-                    <motion.h3 className='text-center robot text-base'>Para oferecer a você uma Experiência inesquecível e totalmente imersiva, nosso ingresso será o nosso óculos de realidade aumentada. Com ele você vai se sentir dentro do THE XXP, e vai poder aproveitar todos os shows e atrações dentro da sua casa. Ao adquirir nossos óculos, você automaticamente receberá seu voucher com seu ingresso, um avatar personalizável, acesso a todos os dias de festival e também a nossa playlist exclusiva.
+                    <motion.h3 className='text-center robot text-base'>Para oferecer a você uma Experiência inesquecível e totalmente imersiva, nosso ingresso será o nosso óculos de realidade aumentada. Com ele você vai se sentir dentro do THE XP, e vai poder aproveitar todos os shows e atrações dentro da sua casa. Ao adquirir nossos óculos, você automaticamente receberá seu voucher com seu ingresso, um avatar personalizável, acesso a todos os dias de festival e também a nossa playlist exclusiva.
                         <br /><br />
 
                         <span className='font-bold text-xl'>Teremos 3 tipos de ingresso:</span><br /><br />
@@ -66,7 +66,7 @@ function Ticket() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: 3, duration: 1.5 }}
                         >    
-                            <span className='intro'>The Astronomical</span>, nosso mais completo passaporte que te dará acesso a todos os 3 dias do THE XXP, avatar com 15 opções de personalização, acesso a imagens exclusivas dos nossos bastidores, entrevistas com nossos liners, e a oportunidade de falar com um deles via chamada de vídeo.</motion.li> <br />
+                            <span className='intro'>The Astronomical</span>, nosso mais completo passaporte que te dará acesso a todos os 3 dias do THE XP, avatar com 15 opções de personalização, acesso a imagens exclusivas dos nossos bastidores, entrevistas com nossos liners, e a oportunidade de falar com um deles via chamada de vídeo.</motion.li> <br />
 
                         <motion.span className='intro text-sm'
                         initial={{ opacity: 0, x:'-5rem' }}

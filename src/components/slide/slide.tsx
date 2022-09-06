@@ -39,7 +39,7 @@ function Slide() {
                     <motion.div className='item'>
                         <img src="./src/assets/riot.svg" width="200px" alt='Riot Games'></img>
                         <motion.div className='item-content'>
-                            <h3 className='py-10 text-center robot'>Aqui no stand da <span>Riot Games</span> você encontra o Lembranças de Runeterra, que é um jogo da memória baseado no jogo de cartas da Riot Games, o Legends of Runeterra. Você vai achar um tabuleiro com 10 cartas, e deverá encontrar todos os 5 pares em um limite de tempo de 3 minutos. Ao completar o jogo, você ganha um pacote de espólios exclusivo do <span>THE XXP</span>. Para resgata-lo é só logar na nossa plataforma com sua conta Riot e digitar o código que estará disponível na tela ao final do jogo. </h3>
+                            <h3 className='py-10 text-center robot'>Aqui no stand da <span>Riot Games</span> você encontra o Lembranças de Runeterra, que é um jogo da memória baseado no jogo de cartas da Riot Games, o Legends of Runeterra. Você vai achar um tabuleiro com 10 cartas, e deverá encontrar todos os 5 pares em um limite de tempo de 3 minutos. Ao completar o jogo, você ganha um pacote de espólios exclusivo do <span>THE XP</span>. Para resgata-lo é só logar na nossa plataforma com sua conta Riot e digitar o código que estará disponível na tela ao final do jogo. </h3>
                         </motion.div>
                     </motion.div>
 
@@ -53,7 +53,7 @@ function Slide() {
                     <motion.div className='item'>
                         <img src="./src/assets/Louis.svg" width="200px" alt='Louis Vuitton'></img>
                         <motion.div className='item-content'>
-                            <h3 className='py-10 text-center robot'>No stand mais chique do festival, você encontrará um puzzle bubble, e terá 3 minutos para juntar 5 trios de logo que aparecerão dentro das bolhas. Ao completar a missão, você ganhará uma camiseta feita exclusivamente para o seu avatar dentro do <span>THE XXP</span>. E também ganha a camiseta em uma loja física da marca em compras acima de 500 R$.  </h3>
+                            <h3 className='py-10 text-center robot'>No stand mais chique do festival, você encontrará um puzzle bubble, e terá 3 minutos para juntar 5 trios de logo que aparecerão dentro das bolhas. Ao completar a missão, você ganhará uma camiseta feita exclusivamente para o seu avatar dentro do <span>THE XP</span>. E também ganha a camiseta em uma loja física da marca em compras acima de 500 R$.  </h3>
                         </motion.div>
                     </motion.div>
 
