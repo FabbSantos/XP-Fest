@@ -10,12 +10,12 @@ function Ticket() {
         
             initial: {
                 opacity: 0,
-                x: '17rem',
+                // x: '17rem',
                 y: '-20rem',
             },
             whileInView: {
                 opacity: 1,
-                x: '17rem',
+                // x: '17rem',
                 y:'-5rem',
                 textShadow: '0px 0px  4px, 0px 0px 12px',
             },
@@ -30,11 +30,11 @@ function Ticket() {
             <div className="ticket w-screen px-10 lg:min-h-[100vh] flex flex-col  relative align-top lg:justify-center">
 
                  
-                <motion.h1  {...animation} className='intro pb-10 lg:pb-0 text-4xl lg:text-7xl text-white text-center uppercase'>
+                <motion.h1  {...animation} className='intro lg:max-w-[900px] lg:pr-[15rem] self-end pb-10 lg:pb-0 text-4xl lg:text-7xl text-white text-center uppercase'>
                     <span className=''>sobre o </span> <br />ingresso
                 </motion.h1>
 
-                <div className="flex flex-col justify-center items-center lg:max-w-[1050px] lg:pr-[10rem] self-end lg:pb-40">
+                <div className="flex flex-col justify-center items-center lg:max-w-[900px] lg:pr-[5rem] self-end lg:pb-40">
 
                     <motion.h3 className='text-center robot text-base'>Para oferecer a você uma Experiência inesquecível e totalmente imersiva, nosso ingresso será o nosso óculos de realidade aumentada. Com ele você vai se sentir dentro do THE XP, e vai poder aproveitar todos os shows e atrações dentro da sua casa. Ao adquirir nossos óculos, você automaticamente receberá seu voucher com seu ingresso, um avatar personalizável, acesso a todos os dias de festival e também a nossa playlist exclusiva.
                         <br /><br />
