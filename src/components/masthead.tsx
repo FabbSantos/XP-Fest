@@ -11,7 +11,7 @@ function Masthead() {
     return (
         <>
             <div className="max-w-screen lg:h-screen py-20 lg:py-0 flex flex-col lg:flex-row relative items-center justify-center">
-                <img src={the_exp} alt="The Experience Festival - Uma experiência metaverso" className='max-h-[476px] lg:max-h-[870px] w-auto' />
+                <img src={the_exp} alt="The Experience Festival - Uma experiência metaverso" className='max-h-[476px] lg:max-h-[700px] w-auto' />
                 <h1 className='invisible absolute'>The Experience Festival - Uma experiência metaverso</h1>
 
 

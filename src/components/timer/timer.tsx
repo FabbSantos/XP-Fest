@@ -9,7 +9,7 @@ const second = 1000,
 
 
 // definir a data para a contagem regressiva 
-let contagemTempo = new Date('Sep 17, 2022 00:00:00').getTime(),
+let contagemTempo = new Date('Sep 20, 2022 21:00:00').getTime(),
 
     // atualizar a contagem regressiva a cada 1 segundo  
     x = setInterval(function () {
@@ -30,7 +30,7 @@ let contagemTempo = new Date('Sep 17, 2022 00:00:00').getTime(),
         // quando a contagem terminar, desaparecer a data e aparecer uma mensagem 
         if (distancia < 0) {
             clearInterval(x);
-            document.getElementById("tempo")!.innerHTML = "FIM";
+            document.getElementById("tempo")!.innerHTML = "A line-up foi anunciada!";
         }
 
     }, second);
@@ -40,7 +40,7 @@ function Timer() {
 
     return (
         <>
-            <motion.div id="tempo"
+            <motion.div id="tempo" className=' font-bold text-2xl'
             initial={{ opacity: 0, x:'-5rem' }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 2, duration: 1 }}
