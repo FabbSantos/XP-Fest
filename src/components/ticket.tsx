@@ -46,7 +46,7 @@ function Ticket() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: 1, duration: 1 }}
                         >    
-                             <span className='intro '>The Basic</span>, que contará com o óculos, o voucher com acesso 1 dia de festival e o avatar com 5 opções de personalização;</motion.li>
+                             <span className='intro '>The Basic</span>, conta com: o ingresso e uma camiseta exclusiva autografada de um artista da preferência do consumidor e um avatar com cinco opções de personalização.</motion.li>
 
                         <br />
 
@@ -55,7 +55,7 @@ function Ticket() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: 2, duration: 1 }}
                         >    
-                             <span className='intro'>The VIP</span>, que contará com os óculos, voucher com acesso a 2 dias de festival , Avatar com 5 tipos de personalização e um brinde surpresa;
+                             <span className='intro'>The VIP</span>, conta com: ingresso, duas camisetas exclusivas autografadas pelo artista da preferência do consumidor e um copo exclusivo do festival, e um avatar com cinco tipos de personalização.
 
                         </motion.li>
 
@@ -66,7 +66,7 @@ function Ticket() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: 3, duration: 1 }}
                         >    
-                            <span className='intro'>The Astronomical</span>, nosso mais completo passaporte que te dará acesso a todos os 3 dias do THE XP, avatar com 15 opções de personalização, acesso a imagens exclusivas dos nossos bastidores, entrevistas com nossos liners, e a oportunidade de falar com um deles via chamada de vídeo.</motion.li> <br />
+                            <span className='intro'>The Experience</span>, conta com: quatro camisetas exclusivas autografadas pelo cantor(a) da preferência do consumidor, copo exclusivo do festival e um Funko Pop do artista que o consumidor preferir, uma vídeo chamada de cinco minutos de duração com um artista headliner e um avatar com quinze tipos de personalização.</motion.li> <br />
 
                         <motion.span className='intro text-sm'
                         initial={{ opacity: 0, x:'-5rem' }}
@@ -83,6 +83,13 @@ function Ticket() {
                     transition={{ delay: 2, duration: 1 }}
                     >
                         siga-nos no <a className='underline' target="_blank" href="https://www.instagram.com/the.xpfest/"> instagram</a> para saber mais!</motion.h4>
+
+                    <motion.h4 className='intro pt-3'
+                    initial={{ opacity: 0, x:'-5rem' }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 2, duration: 1 }}
+                    >
+                        não deixe de conferir a <a className='underline' target="_blank" href="https://open.spotify.com/playlist/6EfDHIox6ZI1XoqZdcxY3v?si=L2wwnyu9Sd6WevrdpDLARQ"> playlist</a> do festival!</motion.h4>
                 </div>
 
             </div>
