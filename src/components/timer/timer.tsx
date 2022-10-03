@@ -9,7 +9,7 @@ const second = 1000,
 
 
 // definir a data para a contagem regressiva 
-let contagemTempo = new Date('Sep 20, 2022 21:00:00').getTime(),
+let contagemTempo = new Date('Oct 4, 2022 23:00:00').getTime(),
 
     // atualizar a contagem regressiva a cada 1 segundo  
     x = setInterval(function () {
